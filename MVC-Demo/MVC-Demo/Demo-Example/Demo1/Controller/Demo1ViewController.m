@@ -7,8 +7,8 @@
 //
 
 #import "Demo1ViewController.h"
-#import "LFOrderHomeModel.h"
-#import "LFOrderHomeCell.h"
+#import "Demo1Model.h"
+#import "Demo1Cell.h"
 #import "Demo1Datas.h"
 @interface Demo1ViewController ()
 
@@ -40,9 +40,8 @@
 #pragma mark - <UITableViewDelegate>
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    LFOrderHomeModel *model = self.datas[indexPath.row];
-    LFOrderHomeCell *cell = [LFOrderHomeCell createCellWithTableView:tableView];
-    cell.delegate = self;
+    Demo1Model *model = self.datas[indexPath.row];
+    Demo1Cell *cell = [Demo1Cell createCellWithTableView:tableView];
     cell.indexPath = indexPath;
     cell.model = model;
     return cell;
@@ -62,19 +61,20 @@
 #pragma mark - tableView编辑模式
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     BOOL q1 = editingStyle == UITableViewCellEditingStyleDelete;
-    if (q1)
-    {
-        
-        LFOrderHomeModel *model = self.datas[indexPath.row];
-        //发送撤单请求Http
-            
-//        [self loadDatasIsDelete:YES];
+    if (q1){
+
+        //发送撤单请求Http,在刷新tableVieew
+
+        Demo1Model *model = self.datas[indexPath.row];
+        NSMutableArray *tempArray = self.datas.mutableCopy;
+        [tempArray removeObject:model];
+        self.datas = tempArray.copy;
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewAutomaticDimension];
     }
     
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
     return @"删除";
 }
 @end

@@ -6,16 +6,14 @@
 //  Copyright © 2017年 xmhccf. All rights reserved.
 //
 
-#import "LFOrderHomeCell.h"
-#import "LFOrderHomeModel.h"
+#import "Demo1Cell.h"
+#import "Demo1Model.h"
 #import "UIView+HGCorner.h"
-#import "LFOrderStateBtn.h"
-//#import "LFPoliciesModel.h"
-//#import "HZDateClass.h"
-#import "LFOrderConst.h"
+#import "Demo1StateBtn.h"
+#import "Demo1Const.h"
 #import "Demo1Label.h"
 
-@implementation LFOrderHomeCell{
+@implementation Demo1Cell{
 
     //顶部时间
     UILabel *_dateLabel;
@@ -269,7 +267,7 @@
     _brokerageLabel = brokerageLabel;
     
     //5.底部按钮 - 右侧按钮
-    LFOrderStateBtn *rightBtn = [LFOrderStateBtn stateBtn];
+    Demo1StateBtn *rightBtn = [Demo1StateBtn stateBtn];
     [rightBtn addTarget:self action:@selector(clickStateBtn:) forControlEvents:UIControlEventTouchUpInside];
     [footerView addSubview:rightBtn];
     [rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -282,7 +280,7 @@
     _stateRightBtn = rightBtn;
     _stateRightBtn.hidden = YES;
     //6.底部按钮 - 如果有2个，左侧按钮
-    LFOrderStateBtn *leftBtn = [LFOrderStateBtn stateBtn];
+    Demo1StateBtn *leftBtn = [Demo1StateBtn stateBtn];
     [leftBtn addTarget:self action:@selector(clickStateBtn:) forControlEvents:UIControlEventTouchUpInside];
     [footerView addSubview:leftBtn];
     [leftBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -310,7 +308,7 @@
 
 
 
-- (void)setModel:(LFOrderHomeModel *)model{
+- (void)setModel:(Demo1Model *)model{
     
     _titleLabel.text = model.product.name;
     _payNameLabel.text = model.applicant;
@@ -412,7 +410,6 @@
     if ([_delegate respondsToSelector:@selector(clickOrderStateBtn:)]) {
         [_delegate clickOrderStateBtn:sender];
     }
-    
 }
 
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LFOrderStateBtn : UIButton
+@interface Demo1StateBtn : UIButton
 
 + (instancetype)stateBtn;
 

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class LFOrderHomeModel;
+@class Demo1Model;
 
 @protocol LFOrderHomeDelegate <NSObject>
 
@@ -15,11 +15,11 @@
 
 @end
 
-@interface LFOrderHomeCell : HZRootTableViewCell
+@interface Demo1Cell : HZRootTableViewCell
 
 @property (nonatomic, weak) id <LFOrderHomeDelegate> delegate;
 
-@property (nonatomic, strong) LFOrderHomeModel *model;
+@property (nonatomic, strong) Demo1Model *model;
 
 @property (nonatomic, strong) NSIndexPath *indexPath;
 

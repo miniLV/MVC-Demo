@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class Order_Product,Order_Insured_Set;
-@interface LFOrderHomeModel : NSObject
+@interface Demo1Model : NSObject
 
 @property (nonatomic, copy) NSString *premium;
 

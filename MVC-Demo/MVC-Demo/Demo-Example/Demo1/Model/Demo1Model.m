@@ -6,9 +6,9 @@
 //  Copyright © 2018年 xmhccf. All rights reserved.
 //
 
-#import "LFOrderHomeModel.h"
+#import "Demo1Model.h"
 
-@implementation LFOrderHomeModel
+@implementation Demo1Model
 
 + (NSDictionary<NSString *,id> *)modelContainerPropertyGenericClass{
     return @{@"insured_set" : [Order_Insured_Set class]};

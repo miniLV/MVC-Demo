@@ -18,7 +18,7 @@ typedef enum orderType:NSInteger{
     
 }LFOrderType;
 
-@interface LFOrderConst : NSObject
+@interface Demo1Const : NSObject
 
 extern CGFloat const LFOrderTopViewH;
 

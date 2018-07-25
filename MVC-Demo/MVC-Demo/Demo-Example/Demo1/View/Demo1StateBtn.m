@@ -6,9 +6,9 @@
 //  Copyright © 2017年 xmhccf. All rights reserved.
 //
 
-#import "LFOrderStateBtn.h"
+#import "Demo1StateBtn.h"
 
-@implementation LFOrderStateBtn
+@implementation Demo1StateBtn
 
 + (instancetype)stateBtn{
 

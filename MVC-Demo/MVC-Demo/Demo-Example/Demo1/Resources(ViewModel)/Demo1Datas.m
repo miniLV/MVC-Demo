@@ -8,7 +8,7 @@
 
 #import "Demo1Datas.h"
 #import "MNFileReadWriteClass.h"
-#import "LFOrderHomeModel.h"
+#import "Demo1Model.h"
 
 @implementation Demo1Datas
 
@@ -16,7 +16,7 @@
     
     id jsonDatas = [MNFileReadWriteClass getFileDatasWithFileName:@"order.json"];
     
-    NSArray *result = [NSArray yy_modelArrayWithClass:[LFOrderHomeModel class] json:jsonDatas[@"results"]];
+    NSArray *result = [NSArray yy_modelArrayWithClass:[Demo1Model class] json:jsonDatas[@"results"]];
 
     block(result);
     

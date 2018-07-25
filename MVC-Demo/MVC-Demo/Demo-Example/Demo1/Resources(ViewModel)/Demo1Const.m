@@ -6,9 +6,9 @@
 //  Copyright © 2017年 xmhccf. All rights reserved.
 //
 
-#import "LFOrderConst.h"
+#import "Demo1Const.h"
 
-@implementation LFOrderConst
+@implementation Demo1Const
 
 CGFloat const LFOrderTopViewH = 44 + 10;
 
