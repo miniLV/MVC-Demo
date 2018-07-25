@@ -16,12 +16,9 @@
 UITableViewDelegate,UITableViewDataSource
 >
 
-
 @end
 
 @implementation MNBaseViewController
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -63,74 +60,18 @@ UITableViewDelegate,UITableViewDataSource
     if ([SVProgressHUD isVisible]) {
         [SVProgressHUD dismiss];
     }
-    
     //取消当前控制器的网络请求
 //    [YHAFNHelper mn_cancelRequet];
     
 }
 
-#pragma mark - 初始化tableView
-
-
-- (void)setupUI{
-    
-    //子类继承一定要记得super！不然tableView没了！！
-    [self createTableView];
-    
-    //上拉加载更多
-    [self p_addMJRefshControls];
-}
-
-- (void)createTableView {
-
-    HZBasicCustonTableView *tableView = [[HZBasicCustonTableView alloc]initWithFrame:Frame(0, DefaultNaviHeight, ScreenW, ScreenH - DefaultNaviHeight) style:UITableViewStyleGrouped];
-
-    tableView.backgroundColor = [UIColor whiteColor];
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    tableView.estimatedRowHeight = 0;
-    tableView.estimatedSectionFooterHeight = 0;
-    tableView.estimatedSectionHeaderHeight = 0;
-    [self.view addSubview:tableView];
-    _tableView = tableView;
-  
-}
-
-//UITableViewStylePlain 类型tableView
-- (void)createTableViewStylePlain{
-    
-    HZBasicCustonTableView *tableView = [[HZBasicCustonTableView alloc]initWithFrame:Frame(0, DefaultNaviHeight, ScreenW, ScreenH - DefaultNaviHeight) style:UITableViewStylePlain];
-    tableView.backgroundColor = [UIColor whiteColor];
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    tableView.estimatedRowHeight = 0;
-    tableView.estimatedSectionFooterHeight = 0;
-    tableView.estimatedSectionHeaderHeight = 0;
-    [self.view addSubview:tableView];
-    _tableView = tableView;
-    
-    [self p_addMJRefshControls];
-}
-
-- (void)p_addMJRefshControls{
-    //上拉加载更多
-    _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreDatas)];
-    _tableView.mj_footer.hidden = YES;
-    
-    //下拉刷新
-    _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshData)];
-    _tableView.mj_header.hidden = YES;
-}
-
-
-
-- (void)mn_fixTableViewHeightWithTableView:(UITableView *)tableView{
-    tableView.frame = Frame(0, DefaultNaviHeight, ScreenW, ScreenH - DefaultNaviHeight - DefaultBottomTabBarHeight);
+#pragma mark - baseSetting
+- (void)baseSetting{
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 #pragma mark - loadDatas
 - (void)loadDatas{
-    
     
 }
 
@@ -143,9 +84,55 @@ UITableViewDelegate,UITableViewDataSource
     
 }
 
-- (void)baseSetting{
-    self.view.backgroundColor = [UIColor whiteColor];
+#pragma mark - setupUI
+- (void)setupUI{
+    
+    //子类继承一定要记得super！不然tableView没了！！
+    [self createTableViewWithStyle:UITableViewStyleGrouped];
+    
+    //上拉加载更多
+    [self p_addMJRefshControls];
 }
+
+
+//UITableViewStylePlain 类型tableView
+- (void)createTableViewStylePlain{
+    
+    [self createTableViewWithStyle:UITableViewStylePlain];
+}
+
+- (void)createTableViewWithStyle:(UITableViewStyle)style{
+    
+    HZBasicCustonTableView *tableView = [[HZBasicCustonTableView alloc]initWithFrame:Frame(0, DefaultNaviHeight, ScreenW, ScreenH - DefaultNaviHeight) style:style];
+    
+    tableView.backgroundColor = [UIColor whiteColor];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    tableView.estimatedRowHeight = 0;
+    tableView.estimatedSectionFooterHeight = 0;
+    tableView.estimatedSectionHeaderHeight = 0;
+    [self.view addSubview:tableView];
+    _tableView = tableView;
+    
+    [self p_addMJRefshControls];
+}
+
+- (void)mn_fixTableViewHeightWithTableView:(UITableView *)tableView{
+    tableView.frame = Frame(0, DefaultNaviHeight, ScreenW, ScreenH - DefaultNaviHeight - DefaultBottomTabBarHeight);
+}
+
+
+#pragma mark - MJRefresh
+- (void)p_addMJRefshControls{
+    //上拉加载更多
+    _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreDatas)];
+    _tableView.mj_footer.hidden = YES;
+    
+    //下拉刷新
+    _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshData)];
+    _tableView.mj_header.hidden = YES;
+}
+
 
 - (void)receiveNotis{
     

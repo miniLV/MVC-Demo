@@ -14,7 +14,8 @@
 typedef void (^MNsuccessBlock)(NSArray *array);
 typedef void (^MNsuccessModelBlock)(id model);
 typedef void (^MNsuccessStringBlock)(NSString *string);
-//请求数据成功 - 需要回传多个参数的
+
+//请求数据成功 - 需要回传多个参数的(用字典 or 自己在那个子类ViewModel里面自定义一个多参数的回调block)
 typedef void (^MNsuccessFullBlock)(NSDictionary *dict);
 typedef void (^MNsuccessNilBlock)(void);
 

@@ -7,7 +7,7 @@
 //
 
 #import "HZCommonColor.h"
-#import "UIColor+Hex.h"
+
 @implementation HZCommonColor
 
 @end
