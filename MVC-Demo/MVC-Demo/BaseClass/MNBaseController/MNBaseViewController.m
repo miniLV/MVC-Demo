@@ -163,7 +163,6 @@ UITableViewDelegate,UITableViewDataSource
 }
 
 
-
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
@@ -201,7 +200,7 @@ UITableViewDelegate,UITableViewDataSource
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
     UIView *view = [[UIView alloc]init];
-    view.backgroundColor = [UIColor lightGrayColor];
+    view.backgroundColor = HZ_f2f3f7Color;
     return view;
 }
 

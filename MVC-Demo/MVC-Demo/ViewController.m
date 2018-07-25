@@ -40,4 +40,13 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    Class cls = NSClassFromString([NSString stringWithFormat:@"Demo%ldViewController",indexPath.row]);
+    
+    if (cls) {
+        [self.navigationController pushViewController:[[cls alloc]init] animated:YES];
+    }
+}
+
 @end

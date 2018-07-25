@@ -28,6 +28,17 @@
 #import "MNKit.h"
 #import "MNBaseViewController.h"
 #import "MNBaseDatas.h"
+#import "UIView+HGCorner.h"
+#import "YYWebImage.h"
+#import "YYModel.h"
+
+#ifdef DEBUG
+//调试环境才会打印
+#define MNLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+//发布环境不打印
+#define MNLog(...)
+#endif
 
 /**常用属性，这里就不抽出去了*/
 //屏幕宽高
