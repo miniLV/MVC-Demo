@@ -26,6 +26,9 @@
 
 #import "Masonry.h"
 #import "MNKit.h"
+#import "MNBaseViewController.h"
+#import "MNBaseDatas.h"
+
 /**常用属性，这里就不抽出去了*/
 //屏幕宽高
 #define ScreenH  [[UIScreen mainScreen] bounds].size.height

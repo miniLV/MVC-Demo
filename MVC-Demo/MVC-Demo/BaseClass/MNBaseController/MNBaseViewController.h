@@ -9,14 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface MNBaseViewController : UIViewController
-{
-    UITableView *_tableView;
 
-    NSArray *_datas;
-}
+@property (nonatomic, weak)UITableView *tableView;
 
-///是否关闭-viewDidLoad中的 接收通知方法
-@property (nonatomic, assign, getter=isCloseNotis) BOOL closeNotis;
+@property (nonatomic, copy)NSArray *datas;
 
 - (void)baseSetting;
 

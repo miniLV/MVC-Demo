@@ -20,10 +20,24 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - loadDatas
+- (void)loadDatas{
+    
+    self.datas = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",];
 }
 
+#pragma mark - setupUI
+- (void)setupUI{
+    [super setupUI];
+    
+}
+
+#pragma mark - <UITableViewDelegate>
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [UITableViewCell new];
+    cell.textLabel.text = self.datas[indexPath.row];
+    return cell;
+}
 
 @end

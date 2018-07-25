@@ -32,4 +32,5 @@
 //子类reWrite - 设置控件布局
 - (void)createControls;
 - (void)setupControls;
+
 @end

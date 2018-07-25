@@ -13,8 +13,6 @@
 static CGFloat defaultLeftMargin = 120;
 static CGFloat rightBtnWH = 16;
 
-
-
 - (void)createControls{
     
     //1.titleLabel

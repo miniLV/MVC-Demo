@@ -34,10 +34,6 @@ UITableViewDelegate,UITableViewDataSource
     [self setupUI];
 
     [self loadDatas];
-    
-    if (!_closeNotis) {
-        [self receiveNotis];
-    }
 
     if (@available(iOS 11.0, *)) {
         _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -184,7 +180,7 @@ UITableViewDelegate,UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return _datas.count;
+    return self.datas.count;
 }
 
 @end
@@ -195,11 +191,11 @@ UITableViewDelegate,UITableViewDataSource
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
 
-    return _datas.count;
+    return self.datas.count;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [_datas[section] count];
+    return [self.datas[section] count];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
