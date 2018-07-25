@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  MVC-Demo
+//
+//  Created by Lyh on 2018/7/25.
+//  Copyright © 2018年 xmhccf. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/**常用文件，这里就不抽出去了*/
+
+#import "UIColor+Hex.h"
+
+//常用颜色
+#import "HZCommonColor.h"
+
+//常用字体
+#import "HZCommonFont.h"
+
+/**常用属性，这里就不抽出去了*/
+//屏幕宽高
+#define ScreenH  [[UIScreen mainScreen] bounds].size.height
+#define ScreenW  [[UIScreen mainScreen] bounds].size.width
+//创建frame
+#define Frame(x,y,width,height) CGRectMake(x, y, width, height)
+
+//图片方法(直接字符串赋值)
+#define MNImage(imgName)  [UIImage imageNamed:imgName]
+
+// iPhone X
+#define  LL_iPhoneX (ScreenW == 375.f && ScreenH == 812.f ? YES : NO)
+
+// Status bar height.
+#define  LL_StatusBarHeight      (LL_iPhoneX ? 44.f : 20.f)
+
+// Tabbar height.
+#define  DefaultBottomTabBarHeight         (LL_iPhoneX ? (49.f+34.f) : 49.f)
+
+// Status bar & navigation bar height.
+#define  DefaultNaviHeight  (LL_iPhoneX ? 88.f : 64.f)
+
+#define DefaultCellHeight 44
+
+#endif /* PrefixHeader_pch */
