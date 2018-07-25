@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "LFPoliciesModel.h"
 typedef enum authType:NSInteger{
     
     ///未认证
@@ -24,7 +23,7 @@ typedef enum authType:NSInteger{
 }MyAuthType;
 
 @class MY_User,MY_Sex,Org,MY_Area,MY_Certificate_Info,MY_Certificate_Image,MY_Approval_Status,MY_Id_Info,MY_Id_Type,Avatar,MY_Approval_Status;
-@interface LFMineHomeDatasModel : NSObject
+@interface Demo0Model : NSObject
 
 +(MyAuthType)getAuthType:(NSString *)typeStr;
 

@@ -17,7 +17,7 @@
 
 @end
 
-@interface MYPersonalCell : LFSimpleRightCell
+@interface Demo0Cell : LFSimpleRightCell
 
 @property (nonatomic, strong) NSIndexPath *indexpath;
 
@@ -26,6 +26,6 @@
 @end
 
 
-@interface MYPersonalAvaterCell : MYPersonalCell
+@interface MYPersonalAvaterCell : Demo0Cell
 
 @end

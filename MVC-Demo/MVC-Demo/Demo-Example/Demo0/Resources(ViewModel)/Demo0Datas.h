@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class LFMineHomeDatasModel;
-@interface MYPersonalDatas : MNBaseDatas
+@interface Demo0Datas : MNBaseDatas
 
 + (NSArray *)getLocalDatas;
 

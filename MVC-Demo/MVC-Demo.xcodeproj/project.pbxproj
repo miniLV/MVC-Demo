@@ -74,9 +74,9 @@
 		14CF541C2108848E00CEDFEA /* UIView+MNFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54142108848E00CEDFEA /* UIView+MNFrame.m */; };
 		A7CE1EAA2108BC8B00D1A982 /* Demo0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EA92108BC8B00D1A982 /* Demo0ViewController.m */; };
 		A7CE1EAD2108BD1D00D1A982 /* LFSimpleRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EAC2108BD1D00D1A982 /* LFSimpleRightCell.m */; };
-		A7CE1EB02108BD2F00D1A982 /* MYPersonalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EAF2108BD2F00D1A982 /* MYPersonalCell.m */; };
-		A7CE1EB32108BD3C00D1A982 /* MYPersonalDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EB22108BD3C00D1A982 /* MYPersonalDatas.m */; };
-		A7CE1EB62108BE2900D1A982 /* LFMineHomeDatasModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EB52108BE2900D1A982 /* LFMineHomeDatasModel.m */; };
+		A7CE1EB02108BD2F00D1A982 /* Demo0Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EAF2108BD2F00D1A982 /* Demo0Cell.m */; };
+		A7CE1EB32108BD3C00D1A982 /* Demo0Datas.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EB22108BD3C00D1A982 /* Demo0Datas.m */; };
+		A7CE1EB62108BE2900D1A982 /* Demo0Model.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EB52108BE2900D1A982 /* Demo0Model.m */; };
 		A7CE1EB92108BE6600D1A982 /* UIView+HGCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EB82108BE6600D1A982 /* UIView+HGCorner.m */; };
 		A7CE1EE32108BEDC00D1A982 /* YYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EBB2108BEDC00D1A982 /* YYImageCache.m */; };
 		A7CE1EE42108BEDC00D1A982 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EBD2108BEDC00D1A982 /* YYDiskCache.m */; };
@@ -240,12 +240,12 @@
 		A7CE1EA92108BC8B00D1A982 /* Demo0ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo0ViewController.m; sourceTree = "<group>"; };
 		A7CE1EAB2108BD1D00D1A982 /* LFSimpleRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSimpleRightCell.h; sourceTree = "<group>"; };
 		A7CE1EAC2108BD1D00D1A982 /* LFSimpleRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSimpleRightCell.m; sourceTree = "<group>"; };
-		A7CE1EAE2108BD2F00D1A982 /* MYPersonalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPersonalCell.h; sourceTree = "<group>"; };
-		A7CE1EAF2108BD2F00D1A982 /* MYPersonalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPersonalCell.m; sourceTree = "<group>"; };
-		A7CE1EB12108BD3C00D1A982 /* MYPersonalDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPersonalDatas.h; sourceTree = "<group>"; };
-		A7CE1EB22108BD3C00D1A982 /* MYPersonalDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPersonalDatas.m; sourceTree = "<group>"; };
-		A7CE1EB42108BE2900D1A982 /* LFMineHomeDatasModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFMineHomeDatasModel.h; sourceTree = "<group>"; };
-		A7CE1EB52108BE2900D1A982 /* LFMineHomeDatasModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFMineHomeDatasModel.m; sourceTree = "<group>"; };
+		A7CE1EAE2108BD2F00D1A982 /* Demo0Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo0Cell.h; sourceTree = "<group>"; };
+		A7CE1EAF2108BD2F00D1A982 /* Demo0Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo0Cell.m; sourceTree = "<group>"; };
+		A7CE1EB12108BD3C00D1A982 /* Demo0Datas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo0Datas.h; sourceTree = "<group>"; };
+		A7CE1EB22108BD3C00D1A982 /* Demo0Datas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo0Datas.m; sourceTree = "<group>"; };
+		A7CE1EB42108BE2900D1A982 /* Demo0Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo0Model.h; sourceTree = "<group>"; };
+		A7CE1EB52108BE2900D1A982 /* Demo0Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo0Model.m; sourceTree = "<group>"; };
 		A7CE1EB72108BE6500D1A982 /* UIView+HGCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HGCorner.h"; sourceTree = "<group>"; };
 		A7CE1EB82108BE6600D1A982 /* UIView+HGCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HGCorner.m"; sourceTree = "<group>"; };
 		A7CE1EBB2108BEDC00D1A982 /* YYImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCache.m; sourceTree = "<group>"; };
@@ -828,8 +828,8 @@
 		A7CE1EA42108BC3400D1A982 /* Resources(ViewModel) */ = {
 			isa = PBXGroup;
 			children = (
-				A7CE1EB12108BD3C00D1A982 /* MYPersonalDatas.h */,
-				A7CE1EB22108BD3C00D1A982 /* MYPersonalDatas.m */,
+				A7CE1EB12108BD3C00D1A982 /* Demo0Datas.h */,
+				A7CE1EB22108BD3C00D1A982 /* Demo0Datas.m */,
 			);
 			path = "Resources(ViewModel)";
 			sourceTree = "<group>";
@@ -846,8 +846,8 @@
 		A7CE1EA62108BC3400D1A982 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A7CE1EB42108BE2900D1A982 /* LFMineHomeDatasModel.h */,
-				A7CE1EB52108BE2900D1A982 /* LFMineHomeDatasModel.m */,
+				A7CE1EB42108BE2900D1A982 /* Demo0Model.h */,
+				A7CE1EB52108BE2900D1A982 /* Demo0Model.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -855,8 +855,8 @@
 		A7CE1EA72108BC3400D1A982 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A7CE1EAE2108BD2F00D1A982 /* MYPersonalCell.h */,
-				A7CE1EAF2108BD2F00D1A982 /* MYPersonalCell.m */,
+				A7CE1EAE2108BD2F00D1A982 /* Demo0Cell.h */,
+				A7CE1EAF2108BD2F00D1A982 /* Demo0Cell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1025,7 +1025,7 @@
 				14CF541B2108848E00CEDFEA /* UIView+controller.m in Sources */,
 				14CF5395210875D700CEDFEA /* MJRefreshAutoStateFooter.m in Sources */,
 				14CF53ED210883D500CEDFEA /* MASCompositeConstraint.m in Sources */,
-				A7CE1EB02108BD2F00D1A982 /* MYPersonalCell.m in Sources */,
+				A7CE1EB02108BD2F00D1A982 /* Demo0Cell.m in Sources */,
 				14CF5398210875D700CEDFEA /* MJRefreshBackStateFooter.m in Sources */,
 				14CF53CA210881FE00CEDFEA /* HZRootTableViewCell.m in Sources */,
 				14CF53F4210883D500CEDFEA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -1082,10 +1082,10 @@
 				14CF539D210875D700CEDFEA /* MJRefreshConst.m in Sources */,
 				A7CE1EE82108BEDC00D1A982 /* YYWebImageManager.m in Sources */,
 				14CF53B12108765800CEDFEA /* SVRadialGradientLayer.m in Sources */,
-				A7CE1EB62108BE2900D1A982 /* LFMineHomeDatasModel.m in Sources */,
+				A7CE1EB62108BE2900D1A982 /* Demo0Model.m in Sources */,
 				A7CE1EEE2108BEDC00D1A982 /* _YYWebImageSetter.m in Sources */,
 				A7CE1EE62108BEDC00D1A982 /* YYKVStorage.m in Sources */,
-				A7CE1EB32108BD3C00D1A982 /* MYPersonalDatas.m in Sources */,
+				A7CE1EB32108BD3C00D1A982 /* Demo0Datas.m in Sources */,
 				A7CE1EEF2108BEDC00D1A982 /* UIButton+YYWebImage.m in Sources */,
 				A7CE1EE32108BEDC00D1A982 /* YYImageCache.m in Sources */,
 				14CF53BA2108790E00CEDFEA /* HZCommonColor.m in Sources */,

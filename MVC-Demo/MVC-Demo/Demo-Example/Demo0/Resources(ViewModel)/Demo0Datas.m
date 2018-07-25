@@ -6,18 +6,18 @@
 //  Copyright © 2018年 xmhccf. All rights reserved.
 //
 
-#import "MYPersonalDatas.h"
-#import "LFMineHomeDatasModel.h"
+#import "Demo0Datas.h"
+#import "Demo0Model.h"
 #import "MNFileReadWriteClass.h"
 
-@implementation MYPersonalDatas
+@implementation Demo0Datas
 
 + (void)fetchDatasSuccessBlock:(MNsuccessBlock)block{
     
     //发起AFN网络请求...假设jsonDatas 是AFN请求成功的回调
     id jsonDatas = [MNFileReadWriteClass getFileDatasWithFileName:@"personal.json"];
     
-    LFMineHomeDatasModel *model = [LFMineHomeDatasModel yy_modelWithJSON:jsonDatas];
+    Demo0Model *model = [Demo0Model yy_modelWithJSON:jsonDatas];
     
     NSArray *result = [self setHttpDatas:model];
     
@@ -35,7 +35,7 @@
     return basicArray;
 }
 
-+ (void)setSection0:(LFMineHomeDatasModel *)dataModel section:(NSArray *)section{
++ (void)setSection0:(Demo0Model *)dataModel section:(NSArray *)section{
     
     //1.头像
     MNCellModel *avaterModel = section[0];
@@ -46,7 +46,7 @@
     nameModel.rightValue = dataModel.user.nickname;
 }
 
-+ (void)setSection1:(LFMineHomeDatasModel *)dataModel section:(NSArray *)section{
++ (void)setSection1:(Demo0Model *)dataModel section:(NSArray *)section{
     
     //0.真实姓名
     MNCellModel *nameModel = section[0];
@@ -76,7 +76,7 @@
     banksModel.rightValue = dataModel.user.bound_bankcard_num;
 }
 
-+ (void)setSection2:(LFMineHomeDatasModel *)dataModel section:(NSArray *)section{
++ (void)setSection2:(Demo0Model *)dataModel section:(NSArray *)section{
     
     //1.电子邮箱
     MNCellModel *emailModel = section[0];

@@ -7,8 +7,8 @@
 //
 
 #import "Demo0ViewController.h"
-#import "MYPersonalCell.h"
-#import "MYPersonalDatas.h"
+#import "Demo0Cell.h"
+#import "Demo0Datas.h"
 @interface Demo0ViewController ()
 
 @end
@@ -23,7 +23,8 @@
 #pragma mark - loadDatas
 - (void)loadDatas{
     
-    [MYPersonalDatas fetchDatasSuccessBlock:^(NSArray *array) {
+    //发起网络请求 - 通过Model层，然后通过block回调给控制器，控制器刷新表格数据源
+    [Demo0Datas fetchDatasSuccessBlock:^(NSArray *array) {
         self.datas = array;
         [self.tableView reloadData];
     }];
@@ -33,6 +34,7 @@
 #pragma mark - setupUI
 - (void)setupUI{
     [super setupUI];
+    //一个简单的super setupUI = createTableView
 }
 
 #pragma mark - <tableViewDelegate>
@@ -43,10 +45,10 @@
         cell.basicModel = model;
         return cell;
     }
-    MYPersonalCell *cell = [self quickCreateCellWithType:model.type
-                                                   model:model
-                                               indexPath:indexPath
-                                               tableView:tableView];
+    Demo0Cell *cell = [self quickCreateCellWithType:model.type
+                                              model:model
+                                          indexPath:indexPath
+                                          tableView:tableView];
     return cell;
 }
 
@@ -59,11 +61,11 @@
     return DefaultCellHeight;
 }
 
-- (MYPersonalCell *)quickCreateCellWithType:(NSInteger)type
+- (Demo0Cell *)quickCreateCellWithType:(NSInteger)type
                                       model:(MNCellModel *)model
                                   indexPath:(NSIndexPath *)indexPath
-                                  tableView:(UITableView *)tableView{
-    MYPersonalCell *cell = [MYPersonalCell createReuseIdentifier:[NSString stringWithFormat:@"%ld",(long)type] WithTableView:tableView];
+                             tableView:(UITableView *)tableView{
+    Demo0Cell *cell = [Demo0Cell createReuseIdentifier:[NSString stringWithFormat:@"%ld",(long)type] WithTableView:tableView];
     cell.indexpath = indexPath;
     cell.basicModel = model;
     return cell;

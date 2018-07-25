@@ -6,9 +6,9 @@
 //  Copyright © 2018年 xmhccf. All rights reserved.
 //
 
-#import "MYPersonalCell.h"
+#import "Demo0Cell.h"
 
-@implementation MYPersonalCell
+@implementation Demo0Cell
 
 - (void)createControls{
     [super createControls];

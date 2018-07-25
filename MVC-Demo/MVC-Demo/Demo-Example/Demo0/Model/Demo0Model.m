@@ -6,9 +6,9 @@
 //  Copyright © 2017年 xmhccf. All rights reserved.
 //
 
-#import "LFMineHomeDatasModel.h"
+#import "Demo0Model.h"
 
-@implementation LFMineHomeDatasModel
+@implementation Demo0Model
 
 +(MyAuthType)getAuthType:(NSString *)typeStr{
     
