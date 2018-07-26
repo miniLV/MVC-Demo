@@ -24,7 +24,7 @@
     block(result);
 }
 
-+ (NSArray *)setHttpDatas:(LFMineHomeDatasModel *)dataModel{
++ (NSArray *)setHttpDatas:(Demo0Model *)dataModel{
     
     NSArray *basicArray = [self getLocalDatas];
 

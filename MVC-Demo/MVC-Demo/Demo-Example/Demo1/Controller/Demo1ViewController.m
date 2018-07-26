@@ -61,8 +61,8 @@
 #pragma mark - tableView编辑模式
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     BOOL q1 = editingStyle == UITableViewCellEditingStyleDelete;
+    
     if (q1){
-
         //发送撤单请求Http,在刷新tableVieew
 
         Demo1Model *model = self.datas[indexPath.row];

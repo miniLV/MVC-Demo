@@ -10,8 +10,4 @@
 @class LFMineHomeDatasModel;
 @interface Demo0Datas : MNBaseDatas
 
-+ (NSArray *)getLocalDatas;
-
-+ (NSArray *)setHttpDatas:(LFMineHomeDatasModel *)dataModel;
-
 @end
