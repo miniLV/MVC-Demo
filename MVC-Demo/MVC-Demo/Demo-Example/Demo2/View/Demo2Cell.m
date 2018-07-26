@@ -6,9 +6,9 @@
 //  Copyright © 2018年 xmhccf. All rights reserved.
 //
 
-#import "CarAddInfoCell.h"
+#import "Demo2Cell.h"
 
-@implementation CarAddInfoCell
+@implementation Demo2Cell
 
 - (void)setupControls{
     [super setupControls];

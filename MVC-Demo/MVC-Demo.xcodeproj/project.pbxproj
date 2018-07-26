@@ -72,8 +72,8 @@
 		14CF541A2108848E00CEDFEA /* UILabel+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54102108848E00CEDFEA /* UILabel+Utils.m */; };
 		14CF541B2108848E00CEDFEA /* UIView+controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54122108848E00CEDFEA /* UIView+controller.m */; };
 		14CF541C2108848E00CEDFEA /* UIView+MNFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54142108848E00CEDFEA /* UIView+MNFrame.m */; };
-		14CF543B2109725700CEDFEA /* CarAddInfoDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF543A2109725700CEDFEA /* CarAddInfoDatas.m */; };
-		14CF543E2109725D00CEDFEA /* CarAddInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF543D2109725D00CEDFEA /* CarAddInfoCell.m */; };
+		14CF543B2109725700CEDFEA /* Demo2Datas.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF543A2109725700CEDFEA /* Demo2Datas.m */; };
+		14CF543E2109725D00CEDFEA /* Demo2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF543D2109725D00CEDFEA /* Demo2Cell.m */; };
 		14CF54412109729000CEDFEA /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54402109729000CEDFEA /* Demo2ViewController.m */; };
 		14CF54442109735400CEDFEA /* CarBasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54422109735300CEDFEA /* CarBasicCell.m */; };
 		14CF54472109736800CEDFEA /* CMAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54462109736800CEDFEA /* CMAddressCell.m */; };
@@ -265,10 +265,10 @@
 		14CF54122108848E00CEDFEA /* UIView+controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+controller.m"; sourceTree = "<group>"; };
 		14CF54132108848E00CEDFEA /* UIView+MNFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MNFrame.h"; sourceTree = "<group>"; };
 		14CF54142108848E00CEDFEA /* UIView+MNFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MNFrame.m"; sourceTree = "<group>"; };
-		14CF54392109725600CEDFEA /* CarAddInfoDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarAddInfoDatas.h; sourceTree = "<group>"; };
-		14CF543A2109725700CEDFEA /* CarAddInfoDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarAddInfoDatas.m; sourceTree = "<group>"; };
-		14CF543C2109725D00CEDFEA /* CarAddInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarAddInfoCell.h; sourceTree = "<group>"; };
-		14CF543D2109725D00CEDFEA /* CarAddInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarAddInfoCell.m; sourceTree = "<group>"; };
+		14CF54392109725600CEDFEA /* Demo2Datas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo2Datas.h; sourceTree = "<group>"; };
+		14CF543A2109725700CEDFEA /* Demo2Datas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2Datas.m; sourceTree = "<group>"; };
+		14CF543C2109725D00CEDFEA /* Demo2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo2Cell.h; sourceTree = "<group>"; };
+		14CF543D2109725D00CEDFEA /* Demo2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2Cell.m; sourceTree = "<group>"; };
 		14CF543F2109728F00CEDFEA /* Demo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
 		14CF54402109729000CEDFEA /* Demo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
 		14CF54422109735300CEDFEA /* CarBasicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarBasicCell.m; sourceTree = "<group>"; };
@@ -771,8 +771,8 @@
 		14CF542A2109723C00CEDFEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				14CF54392109725600CEDFEA /* CarAddInfoDatas.h */,
-				14CF543A2109725700CEDFEA /* CarAddInfoDatas.m */,
+				14CF54392109725600CEDFEA /* Demo2Datas.h */,
+				14CF543A2109725700CEDFEA /* Demo2Datas.m */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -780,10 +780,10 @@
 		14CF542B2109723C00CEDFEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				14CF543C2109725D00CEDFEA /* Demo2Cell.h */,
+				14CF543D2109725D00CEDFEA /* Demo2Cell.m */,
 				14CF54432109735400CEDFEA /* CarBasicCell.h */,
 				14CF54422109735300CEDFEA /* CarBasicCell.m */,
-				14CF543C2109725D00CEDFEA /* CarAddInfoCell.h */,
-				14CF543D2109725D00CEDFEA /* CarAddInfoCell.m */,
 				14CF54452109736800CEDFEA /* CMAddressCell.h */,
 				14CF54462109736800CEDFEA /* CMAddressCell.m */,
 			);
@@ -1244,7 +1244,7 @@
 				A7CE1EEA2108BEDC00D1A982 /* YYImage.m in Sources */,
 				14CF534A210873A300CEDFEA /* main.m in Sources */,
 				14CF539F210875D700CEDFEA /* UIScrollView+MJExtension.m in Sources */,
-				14CF543B2109725700CEDFEA /* CarAddInfoDatas.m in Sources */,
+				14CF543B2109725700CEDFEA /* Demo2Datas.m in Sources */,
 				14CF5399210875D700CEDFEA /* MJRefreshGifHeader.m in Sources */,
 				14CF53EF210883D500CEDFEA /* MASConstraintMaker.m in Sources */,
 				14CF53BB2108790E00CEDFEA /* HZCommonFont.m in Sources */,
@@ -1276,7 +1276,7 @@
 				14CF53B02108765800CEDFEA /* SVProgressHUD.m in Sources */,
 				A7CE1F142108CB6000D1A982 /* Demo1Datas.m in Sources */,
 				14CF53EE210883D500CEDFEA /* MASConstraint.m in Sources */,
-				14CF543E2109725D00CEDFEA /* CarAddInfoCell.m in Sources */,
+				14CF543E2109725D00CEDFEA /* Demo2Cell.m in Sources */,
 				14CF538F210875D700CEDFEA /* MJRefreshBackFooter.m in Sources */,
 				14CF53C621087CDB00CEDFEA /* MNLoadMoreModel.m in Sources */,
 				14CF53A1210875D700CEDFEA /* UIView+MJExtension.m in Sources */,

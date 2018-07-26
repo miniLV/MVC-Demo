@@ -8,7 +8,6 @@
 
 #import "CMAddressCell.h"
 
-//#import "CMConst.h"
 @interface CMAddressCell()
 <UITextViewDelegate>
 @end

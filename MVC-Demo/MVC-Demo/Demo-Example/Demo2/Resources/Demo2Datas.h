@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CarAddInfoDatas : MNBaseDatas
+@interface Demo2Datas : MNBaseDatas
 
 //开关“是否投保人” - 修改模型数据
 + (NSArray *)local_changeSection1FromDatas:(NSArray *)datas;

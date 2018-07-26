@@ -7,8 +7,8 @@
 //
 
 #import "Demo2ViewController.h"
-#import "CarAddInfoDatas.h"
-#import "CarAddInfoCell.h"
+#import "Demo2Datas.h"
+#import "Demo2Cell.h"
 #import "HZSectionView.h"
 @interface Demo2ViewController ()
 <
@@ -32,7 +32,7 @@ CMAddressDelegate
 #pragma mark - loadDatas
 - (void)loadDatas{
     
-    self.datas = [CarAddInfoDatas localDatas];
+    self.datas = [Demo2Datas localDatas];
     [self.tableView reloadData];
 }
 
@@ -58,7 +58,7 @@ CMAddressDelegate
     [self.view endEditing:YES];
     
     //编辑结束 - 提交数据(发起网络请求，请求结果回调到 当前控制器)
-    [CarAddInfoDatas postDatasWithDatas:self.datas successBlock:^(NSString *string) {
+    [Demo2Datas postDatasWithDatas:self.datas successBlock:^(NSString *string) {
         [MNSVProgressClass mn_showSuccess:@"demo2 - 数据提交成功~"];
         
     } failure:^(UIAlertController *alertC) {
@@ -83,7 +83,7 @@ CMAddressDelegate
     NSInteger section = sender.tag / 100;
     NSInteger row = sender.tag % 100;
     
-    self.datas = [CarAddInfoDatas local_changeSection1FromDatas:self.datas];
+    self.datas = [Demo2Datas local_changeSection1FromDatas:self.datas];
     
     MNCellModel *model = self.datas[section][row];
     model.expand = sender.on;
@@ -112,19 +112,19 @@ CMAddressDelegate
         cell.delegate = self;
         return cell;
     }else{
-        CarAddInfoCell *cell = [self p_quickCreateCellWithModel:model
-                                                      indexPath:indexPath
-                                                      tableView:tableView];
+        Demo2Cell *cell = [self p_quickCreateCellWithModel:model
+                                                 indexPath:indexPath
+                                                 tableView:tableView];
         
         return cell;
     }
 }
 
-- (CarAddInfoCell *)p_quickCreateCellWithModel:(MNCellModel *)model
-                                     indexPath:(NSIndexPath *)indexPath
-                                     tableView:(UITableView *)tableView{
+- (Demo2Cell *)p_quickCreateCellWithModel:(MNCellModel *)model
+                                indexPath:(NSIndexPath *)indexPath
+                                tableView:(UITableView *)tableView{
     NSString *typeStr = [NSString stringWithFormat:@"%ld",(long)model.type];
-    CarAddInfoCell *cell = [CarAddInfoCell createReuseIdentifier:typeStr WithTableView:tableView];
+    Demo2Cell *cell = [Demo2Cell createReuseIdentifier:typeStr WithTableView:tableView];
     cell.basicIndexPath = indexPath;
     cell.basicModel = model;
     cell.mnDelegate = self;

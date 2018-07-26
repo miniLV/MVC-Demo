@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CarBasicCell.h"
 #import "CMAddressCell.h"
-@interface CarAddInfoCell : CarBasicCell
+@interface Demo2Cell : CarBasicCell
 
 @end
 

@@ -6,10 +6,10 @@
 //  Copyright © 2018年 xmhccf. All rights reserved.
 //
 
-#import "CarAddInfoDatas.h"
+#import "Demo2Datas.h"
 
 
-@implementation CarAddInfoDatas
+@implementation Demo2Datas
 
 + (NSArray *)localDatas{
     
