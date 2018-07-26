@@ -15,7 +15,7 @@
 + (void)fetchDatasSuccessBlock:(MNsuccessBlock)block{
     
     //发起AFN网络请求...假设jsonDatas 是AFN请求成功的回调
-    id jsonDatas = [MNFileReadWriteClass getFileDatasWithFileName:@"personal.json"];
+    id jsonDatas = [MNFileReadWriteClass loadLocalFileWithFileName:@"personal"];
     
     Demo0Model *model = [Demo0Model yy_modelWithJSON:jsonDatas];
     

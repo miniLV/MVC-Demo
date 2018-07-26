@@ -95,7 +95,6 @@
 		14CF54802109A5AE00CEDFEA /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54712109A5AE00CEDFEA /* IQUIView+IQKeyboardToolbar.m */; };
 		14CF54812109A5AE00CEDFEA /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14CF54732109A5AE00CEDFEA /* IQKeyboardManager.bundle */; };
 		14CF54842109ADDD00CEDFEA /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54832109ADDD00CEDFEA /* Demo3ViewController.m */; };
-		14CF548A2109B6FB00CEDFEA /* fold.json in Resources */ = {isa = PBXBuildFile; fileRef = 14CF54892109B6FA00CEDFEA /* fold.json */; };
 		14CF548D2109B74900CEDFEA /* Demo3Datas.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF548B2109B74900CEDFEA /* Demo3Datas.m */; };
 		14CF54962109BA8E00CEDFEA /* Demo3Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54952109BA8D00CEDFEA /* Demo3Cell.m */; };
 		14CF54992109BADC00CEDFEA /* Demo3View.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54972109BADC00CEDFEA /* Demo3View.m */; };
@@ -135,6 +134,8 @@
 		A7CE1F0E2108C8A600D1A982 /* Demo1Label.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1F0D2108C8A600D1A982 /* Demo1Label.m */; };
 		A7CE1F112108CA7F00D1A982 /* Demo1StateBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1F102108CA7F00D1A982 /* Demo1StateBtn.m */; };
 		A7CE1F142108CB6000D1A982 /* Demo1Datas.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1F132108CB6000D1A982 /* Demo1Datas.m */; };
+		A7CE1F172109FFD900D1A982 /* order.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CE1F152109FFD800D1A982 /* order.json */; };
+		A7CE1F182109FFD900D1A982 /* personal.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CE1F162109FFD900D1A982 /* personal.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -319,7 +320,6 @@
 		14CF54732109A5AE00CEDFEA /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		14CF54822109ADDD00CEDFEA /* Demo3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo3ViewController.h; sourceTree = "<group>"; };
 		14CF54832109ADDD00CEDFEA /* Demo3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo3ViewController.m; sourceTree = "<group>"; };
-		14CF54892109B6FA00CEDFEA /* fold.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fold.json; sourceTree = "<group>"; };
 		14CF548B2109B74900CEDFEA /* Demo3Datas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3Datas.m; sourceTree = "<group>"; };
 		14CF548C2109B74900CEDFEA /* Demo3Datas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3Datas.h; sourceTree = "<group>"; };
 		14CF54942109BA8D00CEDFEA /* Demo3Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3Cell.h; sourceTree = "<group>"; };
@@ -400,6 +400,8 @@
 		A7CE1F102108CA7F00D1A982 /* Demo1StateBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1StateBtn.m; sourceTree = "<group>"; };
 		A7CE1F122108CB6000D1A982 /* Demo1Datas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo1Datas.h; sourceTree = "<group>"; };
 		A7CE1F132108CB6000D1A982 /* Demo1Datas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo1Datas.m; sourceTree = "<group>"; };
+		A7CE1F152109FFD800D1A982 /* order.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = order.json; sourceTree = "<group>"; };
+		A7CE1F162109FFD900D1A982 /* personal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personal.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -941,7 +943,8 @@
 		14CF54882109B6EB00CEDFEA /* DataFiles */ = {
 			isa = PBXGroup;
 			children = (
-				14CF54892109B6FA00CEDFEA /* fold.json */,
+				A7CE1F152109FFD800D1A982 /* order.json */,
+				A7CE1F162109FFD900D1A982 /* personal.json */,
 			);
 			path = DataFiles;
 			sourceTree = "<group>";
@@ -1196,13 +1199,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				14CF53AF2108765800CEDFEA /* SVProgressHUD.bundle in Resources */,
+				A7CE1F182109FFD900D1A982 /* personal.json in Resources */,
 				14CF5347210873A300CEDFEA /* LaunchScreen.storyboard in Resources */,
 				14CF53EC210883D500CEDFEA /* Info.plist in Resources */,
 				14CF5344210873A300CEDFEA /* Assets.xcassets in Resources */,
 				14CF54812109A5AE00CEDFEA /* IQKeyboardManager.bundle in Resources */,
 				14CF539C210875D700CEDFEA /* MJRefresh.bundle in Resources */,
-				14CF548A2109B6FB00CEDFEA /* fold.json in Resources */,
 				14CF5342210873A300CEDFEA /* Main.storyboard in Resources */,
+				A7CE1F172109FFD900D1A982 /* order.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

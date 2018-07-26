@@ -14,4 +14,6 @@
 
 + (id)getFileDatasWithFileName:(NSString *)fileName;
 
++ (id)loadLocalFileWithFileName:(NSString *)fileName;
+
 @end

@@ -14,7 +14,7 @@
 
 + (void)fetchDatasSuccessBlock:(MNsuccessBlock)block{
     
-    id jsonDatas = [MNFileReadWriteClass getFileDatasWithFileName:@"order.json"];
+    id jsonDatas = [MNFileReadWriteClass loadLocalFileWithFileName:@"order"];
     
     NSArray *result = [NSArray yy_modelArrayWithClass:[Demo1Model class] json:jsonDatas[@"results"]];
 
