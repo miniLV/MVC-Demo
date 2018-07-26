@@ -6,10 +6,10 @@
 //  Copyright © 2018年 xmhccf. All rights reserved.
 //
 
-#import "CarSelectePlanView.h"
+#import "Demo3SectionView.h"
 #import "HZSectionView.h"
 
-@implementation CarSelectePlanView
+@implementation Demo3SectionView
 
 + (instancetype)sectionViewWithTitle:(NSString *)title section:(NSInteger)section{
     

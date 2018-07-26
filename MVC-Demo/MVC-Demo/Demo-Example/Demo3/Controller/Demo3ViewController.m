@@ -7,10 +7,10 @@
 //
 
 #import "Demo3ViewController.h"
-#import "CarCheckDatas.h"
-#import "QuoDetailCell.h"
-#import "QuoDetailView.h"
-#import "CarSelectePlanView.h"
+#import "Demo3Datas.h"
+#import "Demo3Cell.h"
+#import "Demo3View.h"
+#import "Demo3SectionView.h"
 @interface Demo3ViewController ()<CarSelectePlanViewDelegate>
 
 @end
@@ -19,14 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.title = @"Demo3";
 }
 
 #pragma mark - loadDatas
 - (void)loadDatas{
-    self.datas = [CarCheckDatas localDatas];
+    self.datas = [Demo3Datas localDatas];
     
-    [CarCheckDatas set_datasWithModel:nil datas:self.datas];
+    [Demo3Datas set_datasWithModel:nil datas:self.datas];
     [self.tableView reloadData];
 }
 
@@ -34,6 +34,22 @@
 - (void)setupUI{
     [super setupUI];
 
+    [self mn_fixTableViewHeightWithTableView:self.tableView];
+    
+    //buttomBtn
+    [MNButton mn_bottomBtnWithTitle:@"重新核保"
+                         titleColor:HZ_EDFFF8Color
+                           fontSize:HZ_18FontSize
+                    backgroundColor:HZ_24C789Color
+                         parentView:self.view
+                             height:DefaultBottomTabBarHeight
+                         targetName:@selector(p_clickBottomBtn)
+                           delegate:self];
+}
+
+- (void)p_clickBottomBtn{
+    
+    MNLog(@"p_clickBottomBtn")
 }
 
 #pragma mark - private Delegate
@@ -59,7 +75,7 @@
     NSArray *cellModels = [self.datas[indexPath.section] cellModels];
     MNCellModel *model = cellModels[indexPath.row];
     
-    QuoDetailCell_TypeSuccess *cell = [self p_quickCreateCellWithModel:model
+    Demo3Cell *cell = [self p_quickCreateCellWithModel:model
                                                              indexPath:indexPath
                                                              tableView:tableView];
     return cell;
@@ -81,11 +97,12 @@
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return DefaultCellHeight;
 }
-- (QuoDetailCell_TypeSuccess *)p_quickCreateCellWithModel:(MNCellModel *)model
-                                                indexPath:(NSIndexPath *)indexPath
-                                                tableView:(UITableView *)tableView{
+
+- (Demo3Cell *)p_quickCreateCellWithModel:(MNCellModel *)model
+                                indexPath:(NSIndexPath *)indexPath
+                                tableView:(UITableView *)tableView{
     NSString *typeStr = [NSString stringWithFormat:@"%ld",(long)model.type];
-    QuoDetailCell_TypeSuccess *cell = [QuoDetailCell_TypeSuccess createReuseIdentifier:typeStr WithTableView:tableView];
+    Demo3Cell *cell = [Demo3Cell createReuseIdentifier:typeStr WithTableView:tableView];
     cell.basicIndexPath = indexPath;
     cell.basicModel = model;
     return cell;
@@ -96,18 +113,16 @@
     MNCellModel *sectionModel = self.datas[section];
     
     if (!sectionModel.titleLabel) {
-        QuoDetailViewTypeSuccess *headerView = [QuoDetailViewTypeSuccess headerView];
+        Demo3View *headerView = [Demo3View headerView];
         [headerView set_headerViewWithModel:nil];
         return headerView;
     }else{
-        CarSelectePlanView *view = [CarSelectePlanView sectionViewWithTitle:sectionModel.titleLabel section:section];
+        Demo3SectionView *view = [Demo3SectionView sectionViewWithTitle:sectionModel.titleLabel section:section];
         view.delegate = self;
         view.arrowBtn.selected = sectionModel.expand;
-
+        
         return view;
     }
- 
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {

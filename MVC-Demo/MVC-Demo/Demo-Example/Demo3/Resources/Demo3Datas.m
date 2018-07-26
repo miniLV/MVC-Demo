@@ -6,14 +6,9 @@
 //  Copyright © 2018年 xmhccf. All rights reserved.
 //
 
-#import "CarCheckDatas.h"
-//#import "CarQuotationModel.h"
-//#import "QuoDetailDatas.h"
-//#import "MNFormModel.h"
-//#import "HZLocalSaveDatas.h"
-//#import "MNString.h"
+#import "Demo3Datas.h"
 
-@implementation CarCheckDatas
+@implementation Demo3Datas
 
 + (NSArray *)localDatas{
     

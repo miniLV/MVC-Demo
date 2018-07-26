@@ -18,7 +18,7 @@
 
 @end
 
-@interface QuoDetailViewTypeSuccess : MNBaseView
+@interface Demo3View : MNBaseView
 
 + (instancetype)bottomViewWithParentView:(UIView *)parentView;
 
@@ -28,16 +28,3 @@
 
 @end
 
-@protocol QuodetailFailerDelegate <NSObject>
-
-- (void)clickCenterBtn:(UIButton *)sender;
-
-@end
-
-@interface QuoDetailViewTypeFailed : MNBaseView
-
-+ (instancetype)contentViewWithModel:(CarQuotationModel *)model;
-
-@property (nonatomic, weak)id<QuodetailFailerDelegate> delegate;
-
-@end

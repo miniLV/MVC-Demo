@@ -14,7 +14,7 @@
 
 @end
 
-@interface CarSelectePlanView : MNBaseView
+@interface Demo3SectionView : MNBaseView
 
 + (instancetype)sectionViewWithTitle:(NSString *)title section:(NSInteger)section;
 

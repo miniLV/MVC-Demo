@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class CarQuotationModel;
-@interface CarCheckDatas : MNBaseDatas
+@interface Demo3Datas : MNBaseDatas
 
 + (void)set_datasWithModel:(CarQuotationModel *)dataModel datas:(NSArray *)datas;
 
