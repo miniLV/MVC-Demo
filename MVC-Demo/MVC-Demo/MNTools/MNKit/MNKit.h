@@ -19,5 +19,6 @@
 #import "MNSVProgressClass.h"
 #import "MNCheakTools.h"
 #import "MNView.h"
+#import "MNBaseView.h"
 
 #endif /* MNKit_h */

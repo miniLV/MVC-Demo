@@ -94,6 +94,14 @@
 		14CF547F2109A5AE00CEDFEA /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF546F2109A5AE00CEDFEA /* IQToolbar.m */; };
 		14CF54802109A5AE00CEDFEA /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54712109A5AE00CEDFEA /* IQUIView+IQKeyboardToolbar.m */; };
 		14CF54812109A5AE00CEDFEA /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14CF54732109A5AE00CEDFEA /* IQKeyboardManager.bundle */; };
+		14CF54842109ADDD00CEDFEA /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54832109ADDD00CEDFEA /* Demo3ViewController.m */; };
+		14CF548A2109B6FB00CEDFEA /* fold.json in Resources */ = {isa = PBXBuildFile; fileRef = 14CF54892109B6FA00CEDFEA /* fold.json */; };
+		14CF548D2109B74900CEDFEA /* CarCheckDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF548B2109B74900CEDFEA /* CarCheckDatas.m */; };
+		14CF54902109B75F00CEDFEA /* CarCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF548F2109B75E00CEDFEA /* CarCheckCell.m */; };
+		14CF54962109BA8E00CEDFEA /* QuoDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54952109BA8D00CEDFEA /* QuoDetailCell.m */; };
+		14CF54992109BADC00CEDFEA /* QuoDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54972109BADC00CEDFEA /* QuoDetailView.m */; };
+		14CF549C2109BB0300CEDFEA /* CarSelectePlanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF549A2109BB0200CEDFEA /* CarSelectePlanView.m */; };
+		14CF549F2109BBB900CEDFEA /* MNBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF549E2109BBB900CEDFEA /* MNBaseView.m */; };
 		A7CE1EAA2108BC8B00D1A982 /* Demo0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EA92108BC8B00D1A982 /* Demo0ViewController.m */; };
 		A7CE1EAD2108BD1D00D1A982 /* LFSimpleRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EAC2108BD1D00D1A982 /* LFSimpleRightCell.m */; };
 		A7CE1EB02108BD2F00D1A982 /* Demo0Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE1EAF2108BD2F00D1A982 /* Demo0Cell.m */; };
@@ -310,6 +318,21 @@
 		14CF54702109A5AE00CEDFEA /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
 		14CF54712109A5AE00CEDFEA /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		14CF54732109A5AE00CEDFEA /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		14CF54822109ADDD00CEDFEA /* Demo3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo3ViewController.h; sourceTree = "<group>"; };
+		14CF54832109ADDD00CEDFEA /* Demo3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo3ViewController.m; sourceTree = "<group>"; };
+		14CF54892109B6FA00CEDFEA /* fold.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fold.json; sourceTree = "<group>"; };
+		14CF548B2109B74900CEDFEA /* CarCheckDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCheckDatas.m; sourceTree = "<group>"; };
+		14CF548C2109B74900CEDFEA /* CarCheckDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCheckDatas.h; sourceTree = "<group>"; };
+		14CF548E2109B75E00CEDFEA /* CarCheckCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCheckCell.h; sourceTree = "<group>"; };
+		14CF548F2109B75E00CEDFEA /* CarCheckCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCheckCell.m; sourceTree = "<group>"; };
+		14CF54942109BA8D00CEDFEA /* QuoDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoDetailCell.h; sourceTree = "<group>"; };
+		14CF54952109BA8D00CEDFEA /* QuoDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoDetailCell.m; sourceTree = "<group>"; };
+		14CF54972109BADC00CEDFEA /* QuoDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoDetailView.m; sourceTree = "<group>"; };
+		14CF54982109BADC00CEDFEA /* QuoDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoDetailView.h; sourceTree = "<group>"; };
+		14CF549A2109BB0200CEDFEA /* CarSelectePlanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarSelectePlanView.m; sourceTree = "<group>"; };
+		14CF549B2109BB0300CEDFEA /* CarSelectePlanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSelectePlanView.h; sourceTree = "<group>"; };
+		14CF549D2109BBB900CEDFEA /* MNBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNBaseView.h; sourceTree = "<group>"; };
+		14CF549E2109BBB900CEDFEA /* MNBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNBaseView.m; sourceTree = "<group>"; };
 		A7CE1EA82108BC8B00D1A982 /* Demo0ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo0ViewController.h; sourceTree = "<group>"; };
 		A7CE1EA92108BC8B00D1A982 /* Demo0ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo0ViewController.m; sourceTree = "<group>"; };
 		A7CE1EAB2108BD1D00D1A982 /* LFSimpleRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSimpleRightCell.h; sourceTree = "<group>"; };
@@ -412,6 +435,7 @@
 		14CF5339210873A200CEDFEA /* MVC-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				14CF54882109B6EB00CEDFEA /* DataFiles */,
 				A7CE1E8E2108BBAA00D1A982 /* Demo-Example */,
 				14CF53B2210878C800CEDFEA /* MNTools */,
 				14CF53572108755A00CEDFEA /* 3rd */,
@@ -719,6 +743,8 @@
 		14CF54082108848E00CEDFEA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				14CF549D2109BBB900CEDFEA /* MNBaseView.h */,
+				14CF549E2109BBB900CEDFEA /* MNBaseView.m */,
 				14CF544F2109A38200CEDFEA /* MNView.h */,
 				14CF544E2109A38200CEDFEA /* MNView.m */,
 				14CF54492109738800CEDFEA /* MNPlaceholderTextView.h */,
@@ -804,6 +830,8 @@
 		14CF542D2109723D00CEDFEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				14CF54822109ADDD00CEDFEA /* Demo3ViewController.h */,
+				14CF54832109ADDD00CEDFEA /* Demo3ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -818,6 +846,8 @@
 		14CF542F2109723D00CEDFEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14CF548C2109B74900CEDFEA /* CarCheckDatas.h */,
+				14CF548B2109B74900CEDFEA /* CarCheckDatas.m */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -825,6 +855,14 @@
 		14CF54302109723D00CEDFEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				14CF549B2109BB0300CEDFEA /* CarSelectePlanView.h */,
+				14CF549A2109BB0200CEDFEA /* CarSelectePlanView.m */,
+				14CF54982109BADC00CEDFEA /* QuoDetailView.h */,
+				14CF54972109BADC00CEDFEA /* QuoDetailView.m */,
+				14CF54942109BA8D00CEDFEA /* QuoDetailCell.h */,
+				14CF54952109BA8D00CEDFEA /* QuoDetailCell.m */,
+				14CF548E2109B75E00CEDFEA /* CarCheckCell.h */,
+				14CF548F2109B75E00CEDFEA /* CarCheckCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -944,14 +982,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		14CF54882109B6EB00CEDFEA /* DataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				14CF54892109B6FA00CEDFEA /* fold.json */,
+			);
+			path = DataFiles;
+			sourceTree = "<group>";
+		};
 		A7CE1E8E2108BBAA00D1A982 /* Demo-Example */ = {
 			isa = PBXGroup;
 			children = (
+				A7CE1EA32108BC3400D1A982 /* Demo0 */,
+				A7CE1E942108BC3400D1A982 /* Demo1 */,
 				14CF54272109723C00CEDFEA /* Demo2 */,
 				14CF542C2109723D00CEDFEA /* Demo3 */,
 				14CF54312109723D00CEDFEA /* Demo4 */,
-				A7CE1EA32108BC3400D1A982 /* Demo0 */,
-				A7CE1E942108BC3400D1A982 /* Demo1 */,
 			);
 			path = "Demo-Example";
 			sourceTree = "<group>";
@@ -1200,6 +1246,7 @@
 				14CF5344210873A300CEDFEA /* Assets.xcassets in Resources */,
 				14CF54812109A5AE00CEDFEA /* IQKeyboardManager.bundle in Resources */,
 				14CF539C210875D700CEDFEA /* MJRefresh.bundle in Resources */,
+				14CF548A2109B6FB00CEDFEA /* fold.json in Resources */,
 				14CF5342210873A300CEDFEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1223,9 +1270,12 @@
 				14CF541B2108848E00CEDFEA /* UIView+controller.m in Sources */,
 				14CF54472109736800CEDFEA /* CMAddressCell.m in Sources */,
 				14CF5395210875D700CEDFEA /* MJRefreshAutoStateFooter.m in Sources */,
+				14CF54902109B75F00CEDFEA /* CarCheckCell.m in Sources */,
+				14CF54992109BADC00CEDFEA /* QuoDetailView.m in Sources */,
 				14CF53ED210883D500CEDFEA /* MASCompositeConstraint.m in Sources */,
 				14CF547A2109A5AE00CEDFEA /* IQKeyboardReturnKeyHandler.m in Sources */,
 				A7CE1EB02108BD2F00D1A982 /* Demo0Cell.m in Sources */,
+				14CF549F2109BBB900CEDFEA /* MNBaseView.m in Sources */,
 				14CF5398210875D700CEDFEA /* MJRefreshBackStateFooter.m in Sources */,
 				14CF53CA210881FE00CEDFEA /* HZRootTableViewCell.m in Sources */,
 				14CF54782109A5AE00CEDFEA /* IQUIViewController+Additions.m in Sources */,
@@ -1235,6 +1285,7 @@
 				14CF54162108848E00CEDFEA /* MNSVProgressClass.m in Sources */,
 				14CF533F210873A300CEDFEA /* ViewController.m in Sources */,
 				14CF539B210875D700CEDFEA /* MJRefreshStateHeader.m in Sources */,
+				14CF54842109ADDD00CEDFEA /* Demo3ViewController.m in Sources */,
 				14CF53FE2108847500CEDFEA /* BXTextField.m in Sources */,
 				14CF54192108848E00CEDFEA /* UIImage+Original.m in Sources */,
 				14CF53F0210883D500CEDFEA /* MASLayoutConstraint.m in Sources */,
@@ -1283,6 +1334,7 @@
 				A7CE1EEB2108BEDC00D1A982 /* YYImageCoder.m in Sources */,
 				14CF53F3210883D500CEDFEA /* NSArray+MASAdditions.m in Sources */,
 				A7CE1EB92108BE6600D1A982 /* UIView+HGCorner.m in Sources */,
+				14CF54962109BA8E00CEDFEA /* QuoDetailCell.m in Sources */,
 				A7CE1EF32108BEDC00D1A982 /* CALayer+YYWebImage.m in Sources */,
 				14CF544D2109768300CEDFEA /* HZSectionView.m in Sources */,
 				14CF53C321087CAC00CEDFEA /* MNBaseDatas.m in Sources */,
@@ -1293,7 +1345,9 @@
 				14CF53D02108824100CEDFEA /* MNCellModel.m in Sources */,
 				14CF54742109A5AE00CEDFEA /* IQNSArray+Sort.m in Sources */,
 				A7CE1F0B2108C7DB00D1A982 /* Demo1Model.m in Sources */,
+				14CF548D2109B74900CEDFEA /* CarCheckDatas.m in Sources */,
 				14CF547D2109A5AE00CEDFEA /* IQPreviousNextView.m in Sources */,
+				14CF549C2109BB0300CEDFEA /* CarSelectePlanView.m in Sources */,
 				A7CE1EAA2108BC8B00D1A982 /* Demo0ViewController.m in Sources */,
 				14CF533C210873A300CEDFEA /* AppDelegate.m in Sources */,
 				A7CE1F112108CA7F00D1A982 /* Demo1StateBtn.m in Sources */,
